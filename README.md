@@ -7,7 +7,8 @@
 - [Results](#results)
 - [Dependencies](#dependencies)
 - [License](#license)
-##Overview
+
+## Overview
 This is an end-to-end deep learning project to recognize and classify traffic signs. It uses a CNN model and a ViT trained on a labeled dataset consisting of images and metadata and compares the two.
 ##Dataset
 - Located in the `data/` folder
