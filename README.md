@@ -13,19 +13,7 @@ This is an end-to-end deep learning project to recognize and classify traffic si
 - Located in the `data/` folder
 - Performed data augmentation on the train dataset.
 reference: https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign
-## Project Structure
-DLP/
-│
-├── data/                  # Contains traffic sign dataset files and folders
-│   ├── 0/
-│   ├── 1/
-│   ├── .....
-│
-├── alldirection.py        # Script for detecting all traffic sign directions
-├── requiremnts.txt        # dependencies
-├── main.py                # Main training or evaluation script
-├── vit.py                 # Vision Transformer model code
-├── README.md              # Project documentation
+<pre> ## Project Structure ``` DLP/ │ ├── data/ # Contains traffic sign dataset files and folders │ ├── 0/ │ ├── 1/ │ ├── ..... │ ├── alldirection.py # Script for detecting all traffic sign directions ├── requiremnts.txt # dependencies ├── main.py # Main training or evaluation script ├── vit.py # Vision Transformer model code ├── README.md # Project documentation ``` </pre>
 ## How to Run
 1. Clone the repository
 git clone https://github.com/your-username/traffic-sign-detection.git
