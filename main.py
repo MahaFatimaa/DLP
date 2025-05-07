@@ -13,7 +13,7 @@ import tensorflow as tf
 
 
 def data_preprocessing(data_dir):
-    train_dir = os.path.join(data_dir, 'Train')
+    train_dir = data_dir
 
     print("----------- Starting Data Preprocessing -----------")
     
@@ -87,7 +87,7 @@ def exploratory_data_analysis(data_dir):
     
     print("Loading sample images...")
     for label in range(classes):
-        label_dir = os.path.join(data_dir, 'Train', str(label))
+        label_dir = os.path.join(data_dir, str(label))
         sample_img = os.listdir(label_dir)[0]  # Get the first image
         img_path = os.path.join(label_dir, sample_img)
         img = plt.imread(img_path)
@@ -199,7 +199,7 @@ def evaluate_model(X_test, y_test, model_dir):
     print("----------- Model Evaluation Complete -----------")
 
 
-def run(data_dir, model_dir, epochs=40, batch_size=64):
+def run(data_dir, model_dir, epochs=10, batch_size=64):
     # Data Preprocessing
     X_train, X_val, X_test, y_train, y_val, y_test = data_preprocessing(data_dir)
     
